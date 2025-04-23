@@ -1,0 +1,66 @@
+.form {
+    Min-width:350px;
+    min-height:200px;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: center;
+    font-size: 22px;
+    color: #333;
+    padding-bottom: 15px;
+}
+
+td {
+    padding: 8px 0;
+    font-size: 14px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+button {
+    width: 45%;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px 5px 0 5px;
+    transition: background-color 0.3s;
+}
+
+.login {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.login:hover {
+    background-color: #f9870d;
+}
+
+.register {
+    background-color: #2196F3;
+    color: white;
+}
+
+.register:hover {
+    background-color: #fb8d07;
+}

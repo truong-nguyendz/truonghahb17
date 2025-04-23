@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Thanh toán - Cửa hàng thể thao</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/> 
+        <link rel="stylesheet" type="text/css" href="css/checkout.css"/> 
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+        <script src="js/style.js"></script>
+        <script src="js/checkout.js"></script>
+    </head>
+    <body id="body">
+        <div id="header">
+            <div id="header-top">
+                <div id="tieude">
+                    <h2>TRƯỜNG SPORT</h2>
+                </div>
+                <div id="login">
+                    <ul >
+                        <li id="dangnhap"><a href="login.html" ><i class="fas fa-sign-in-alt"></i> Đăng nhập</a></li>
+                        <li id="dangky"><a href="register.html" ><i class="fas fa-user-plus"></i> Đăng ký</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="header-mid">
+                <div id="logo">
+                    <a href="index.html"><img class="logo" src="image/logo2.png" /></a>
+                </div>
+
+                <div id="searth">
+                    <input type="text" placeholder="Tìm kiếm..." id="search-box">
+                    <button id="search-btn">Tìm kiếm</button>
+                </div>
+
+                <div id="time">
+                    <p>⏰ Giờ mở cửa: 8:00 - 22:00</p>
+                    <p>📍 SDT:094778132</p>
+                </div>
+            </div>
+
+            <div id="header-botton">
+                <ul class="dichuyen">
+                    <li class="menu"><a class="menu-a" href="index.html">TRANG CHỦ</a></li>
+                    <li class="menu"><a class="menu-a" href="aobongda">ÁO BÓNG ĐÁ</a></li>
+                    <li class="menu"><a class="menu-a" href="aobongro">ÁO BÓNG RỔ</a></li>
+                    <li class="menu"><a class="menu-a" href="aobongchuyen">ÁO BÓNG CHUYỀN</a></li>
+                    <li class="menu"><a class="menu-a" href="dungcuthethao">DỤNG CỤ THỂ THAO</a></li>
+                    <li class="menu"><a class="menu-a" href="lienhe">LIÊN HỆ</a></li>
+                    <li id="giohang" class="menu"><a class="menu-a" href="shopping.html" ><i class="fas fa-shopping-cart"></i> Giỏ hàng</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="main">
+            <div class="checkout-container">
+                <div class="checkout-header">
+                    <i class="fas fa-credit-card"></i> Thanh toán đơn hàng
+                </div>
+                <div class="checkout-content">
+                    <div class="checkout-summary">
+                        <h3>Tóm tắt đơn hàng</h3>
+                        <div id="checkout-items">
+                            <!-- Các sản phẩm sẽ được thêm vào đây bằng JavaScript -->
+                        </div>
+                        <div class="total-row">
+                            <span>Tổng cộng:</span>
+                            <span id="checkout-total">0₫</span>
+                        </div>
+                    </div>
+
+                    <form id="checkout-form" class="checkout-form">
+                        <h3>Thông tin người nhận</h3>
+                        <div class="form-group">
+                            <label for="fullname" class="required">Họ và tên</label>
+                            <input type="text" id="fullname" name="fullname" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="required">Số điện thoại</label>
+                            <input type="tel" id="phone" name="phone"placeholder="0123456XXX" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="required">Email</label>
+                            <input type="email" id="email" name="email"placeholder="emxamlp@gmail.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="address" class="required">Địa chỉ</label>
+                            <input type="text" id="address" name="address" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="city" class="required">Tỉnh/Thành phố</label>
+                            <input type="text" id="city" name="city" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="notes">Ghi chú</label>
+                            <textarea id="notes" name="notes" placeholder="Ghi chú thêm về đơn hàng..."></textarea>
+                        </div>
+
+                        <h3>Phương thức thanh toán</h3>
+                        <div class="payment-methods">
+                            <div class="payment-method selected" data-method="cod">
+                                <i class="fas fa-money-bill-wave"></i>
+                                <p>Tiền mặt khi nhận hàng</p>
+                            </div>
+                            <div class="payment-method" data-method="bank">
+                                <i class="fas fa-university"></i>
+                                <p>Chuyển khoản ngân hàng</p>
+                            </div>
+                            <div class="payment-method" data-method="card">
+                                <i class="fas fa-credit-card"></i>
+                                <p>Thẻ tín dụng/Ghi nợ</p>
+                            </div>
+                            <div class="payment-method" data-method="momo">
+                                <i class="fas fa-wallet"></i>
+                                <p>Ví điện tử</p>
+                            </div>
+                        </div>
+
+                        <input type="hidden" id="payment-method" name="payment-method" value="cod">
+
+                        <div class="checkout-actions">
+                            <button type="button" class="checkout-button back-button" onclick="window.location.href='shopping.html'">
+                                <i class="fas fa-arrow-left"></i> Quay lại giỏ hàng
+                            </button>
+                            <button type="submit" class="checkout-button confirm-button">
+                                <i class="fas fa-check"></i> Xác nhận đặt hàng
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div id="footer-a">
+                <div id="footer-left">
+                    <h1 class="h">Hỗ trợ khách hàng</h1>
+                    <ul class="u">
+                        <li class="l"><a href="#">Chính sách vận chuyển</a></li>
+                        <li class="l"><a href="#">Chính sách đổi trả</a></li>
+                        <li class="l"><a href="#">Chính sách khuyến mại</a></li>
+                        <li class="l"><a href="#">Hướng dẫn mua hàng</a></li>
+                        <li class="l"><a href="#">Câu hỏi thường gặp</a></li>
+                        <li class="l"><a href="#">Bảo mật thông tin</a></li>
+                    </ul>
+                </div>
+                <div id="footer-mid">
+                    <h1 class="h">Liên hệ</h1>
+                    <ul class="u">
+                        <li class="l">Địa chỉ: Thanh Long Yên Mỹ Hưng Yên</li>
+                        <li class="l">Điện thoại: 0964778132</li>
+                        <li class="l">Email: Truongdzqua171@gmail.com</li>
+                        <li class="l"><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li class="l"><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li class="l"><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+                    </ul>
+                </div>
+                <div id="footer-right">
+                    <h1 class="h">Về chúng tôi</h1>
+                    <div class="footer-logo">
+                        <img src="image/logo2.png" alt="Trường Sport Logo" class="logo">
+                    </div>
+                    <p>TRƯỜNG SPORT - Cửa hàng thể thao chuyên nghiệp hàng đầu Việt Nam. Chúng tôi cung cấp các sản phẩm thể thao chất lượng cao với giá cả hợp lý.</p>
+                </div>
+                <div id="footer-extra">
+                    <h1 class="h">Đăng ký nhận tin</h1>
+                    <p>Đăng ký để nhận thông tin về sản phẩm mới và khuyến mãi</p>
+                    <div class="footer-signup">
+                        <input type="email" placeholder="Email của bạn" class="footer-email">
+                        <button class="footer-btn">Đăng ký</button>
+                    </div>
+                    <div class="footer-payment">
+                        <h3>Thanh toán</h3>
+                        <div class="payment-icons">
+                            <i class="fab fa-cc-visa"></i>
+                            <i class="fab fa-cc-mastercard"></i>
+                            <i class="fab fa-cc-paypal"></i>
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 TRƯỜNG SPORT</p>
+            </div>
+        </div>
+    </body>
+</html>

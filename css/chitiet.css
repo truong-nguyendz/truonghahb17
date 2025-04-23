@@ -1,0 +1,63 @@
+/* CSS đơn giản cho trang chi tiết sản phẩm */
+.product-detail {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+#anhpr {
+    width: 60%;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#anhpr img {
+    max-width: 100%;
+    max-height: 450px;
+    object-fit: contain;
+}
+
+#content {
+    width: 40%;
+    padding: 0 15px;
+    color: #333;
+}
+
+#content h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #222;
+    font-size: 22px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+#content h4 {
+    color: #d32f2f;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+#content p {
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+#content ul {
+    margin-left: 20px;
+    list-style: disc;
+    margin-bottom: 10px;
+}
+
+#content ul li {
+    margin-bottom: 5px;
+}

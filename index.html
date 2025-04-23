@@ -1,0 +1,524 @@
+<html>
+    <head> 
+        <title>Cửa hàng thể thao</title>
+        <meta charset="utf-8"/>
+		<link rel="stylesheet" type="text/css"href="css/style.css"/> 
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+        <script src="js/style.js"></script>
+        <script src="js/shopping.js"></script>
+        
+
+    </head>
+    <body id="body">
+        
+        <div id="header" >
+            <div id ="header-top">
+                <div id="tieude">
+                  
+                        <h2>TRƯỜNG SPORT</h2>
+                    
+
+                </div>
+                <div id="login">
+                    <ul >
+                        <li id="dangnhap"><a href="login.html" target="_blank" ><i class="fas fa-sign-in-alt"></i> Đăng nhập</a></li>
+                        <li id="dangky"><a href="register.html" ><i class="fas fa-user-plus"></i> Đăng ký</a></li>
+                        
+                     </ul>
+
+                </div>
+
+            </div>
+            <div id="header-mid">
+                <div id="logo">
+                     <a href="index.html"><img  class="logo" src="image/logo2.png" /></a>
+                </div>
+                
+                <div id="searth">
+                    <input type="text" placeholder="Tìm kiếm..." id="search-box">
+                    <button id="search-btn">Tìm kiếm</button>
+                </div>
+                
+                <div id="time">
+                    <p>⏰ Giờ mở cửa: 8:00 - 22:00</p>
+                    <p>📍 SDT:094778132</p>
+                </div>
+            </div>
+            
+            <div id="header-botton">
+                <button id="header-toggle">☰ </button>
+                <ul class="dichuyen">
+                    <li class="menu"><a class="menu-a" href="index.html">TRANG CHỦ</a></li>
+                    <li class="menu">
+                        <a class="menu-a" href="aobongda">BÓNG ĐÁ</a>
+                        <ul class="menu-a-ul">
+                            <li><a href="#">Áo bóng đá</a></li>
+                            <li><a href="#">Giày bóng đá</a></li>
+                            <li><a href="#">Quả bóng đá</a></li>
+                            <li><a href="#">Phụ kiện bóng đá</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a class="menu-a" href="aobongro">BÓNG RỔ</a>
+                        <ul class="menu-a-ul">
+                            <li><a href="#">Áo bóng rổ</a></li>
+                            <li><a href="#">Giày bóng rổ</a></li>
+                            <li><a href="#">Quả bóng rổ</a></li>
+                            <li><a href="#">Phụ kiện bóng rổ</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a class="menu-a" href="aobongchuyen">BÓNG CHUYỀN</a>
+                        <ul class="menu-a-ul">
+                            <li><a href="#">Áo bóng chuyền</a></li>
+                            <li><a href="#">Giày bóng chuyền</a></li>
+                            <li><a href="#">Quả bóng chuyền</a></li>
+                            <li><a href="#">Phụ kiện bóng chuyền</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a class="menu-a" href="dungcuthethao">QUẦN VỢT</a>
+                        <ul class="menu-a-ul">
+                            <li><a href="#">Vợt cầu lông</a></li>
+                            <li><a href="#">Vợt picker ball</a></li>
+                            <li><a href="#">Vợt tennis</a></li>
+                            <li><a href="#">Cầu</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu"><a class="menu-a" href="#Lienhe">LIÊN HỆ</a></li>
+                    <li id="giohang" class="menu"><a class="menu-a" href="shopping.html" ><i class="fas fa-shopping-cart"></i> Giỏ hàng</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div id="main">
+            <div id="wrapper">
+                <div id="maintop-left">
+                    <button id="menu-toggle">☰ DANH MỤC</button>
+                    <h1>Danh mục</h1>
+                    <ul id="menu-items">
+                        <li><a href="#">BÓNG ĐÁ</a></li>
+                        <li><a href="#">BÓNG CHUYỀN</a></li>
+                        <li><a href="#">BÓNG RỔ</a></li>
+                        <li><a href="#">CẦU LÔNG</a></li>
+                        <li><a href="#">PICKER BALL</a></li>
+                        <li><a href="#">CHẠY BỘ</a></li>
+                        <li><a href="#">ĐẠP XE</a></li>
+                        <li><a href="#">BƠI LỘI</a></li>
+                    </ul>
+                </div>
+
+
+                <div id="maintop-right">
+                    <img id="slide" class="logo1" src="image/slide_1.png" />
+                    <div id="slide-controls">
+                        <img src="image/back.jpg" onclick="back()" />
+                        <img src="image/next.jpg" onclick="next()" />
+                    </div>
+                </div>
+                <div id="mainbotton">
+                    <div class="product-heading">
+                        <h2>ÁO TỰ THIẾT KẾ</h2>
+                        <a href="#" class="view-all">Xem Tất Cả</a>
+                    </div>
+                    
+                    <div class="product-container">
+                       
+                         <div class="product-item" data-id="1" data-name="Quần Áo Bóng Đá Thiết Kế RO-25 Màu Đỏ Đẹp" data-price="119000" data-image="image/tk1.jpg">
+                             <div class="product-image" > 
+                                 <img  src="image/tk1.jpg" />
+                             </div>
+                             <div class="product-info">
+                                 <h3>Quần Áo Bóng Đá Thiết Kế RO-25 Màu Đỏ Đẹp</h3>
+                                 <div class="product-price">
+                                     <span class="price">119,000₫/ Bộ</span>
+                                 </div>
+                                 <button class="view-details-btn"><a href="chitiet.html">Chi tiết</a></button>
+                                 <button class="add-to-cart-btn"  > Thêm giỏ hàng</button>
+                             </div>
+                         </div>
+                        
+                
+                        <div class="product-item">
+                            <div class="product-image"data-id="2" data-name="Áo Bóng Đá Thiết Kế RO-19 Màu Hồng" data-price="119000" data-image="image/tk22.jpg">
+                                <img src="image/tk2.jpg" />
+                               
+                            </div>
+                            <div class="product-info">
+                                <h3>Áo Bóng Đá Thiết Kế RO-19 Màu Hồng</h3>
+                                <div class="product-price">
+                                    <span class="price">119,000₫/ Bộ</span>
+                                </div>
+                                
+                                <button class="view-details-btn"><a href="chitiet.html">Chi tiết</a></button>
+                                <button class="add-to-cart-btn"  >Thêm giỏ hàng</button>
+                            </div>
+                        </div>
+                
+                        <div class="product-item" data-id="3" data-name="Đồ Đá Banh Thiết Kế RO-24 Màu Vàng Đồng" data-price="119000" data-image="image/tk3.jpg">
+                            <div class="product-image">
+                                <img src="image/tk3.jpg" />
+                               
+                            </div>
+                            <div class="product-info">
+                                <h3>Đồ Đá Banh Thiết Kế RO-24 Màu Vàng Đồng</h3>
+                                <div class="product-price">
+                                    <span class="price">119,000₫/ Bộ</span>
+                                </div>
+                               
+                                <button class="view-details-btn"><a href="#">Chi tiết</a></button>
+                                <button class="add-to-cart-btn"  >Thêm giỏ hàng</button>
+                            </div>
+                        </div>
+                
+                        <div class="product-item" data-id="4" data-name="Áo Bóng Đá Thiết Kế RO-23 Màu Trắng Đẹp" data-price="119000" data-image="image/tk4.jpg">
+                            <div class="product-image">
+                                <img src="image/tk4.jpg" />
+                                
+                            </div>
+                            <div class="product-info">
+                                <h3>Áo Bóng Đá Thiết Kế RO-23 Màu Trắng Đẹp</h3>
+                                <div class="product-price">
+                                    <span class="price">119,000₫/ Bộ</span>
+                                </div>
+                                <button class="view-details-btn"><a href="#">Chi tiết</a></button>
+                                <button class="add-to-cart-btn" >Thêm giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-heading">
+                        <h2>Sản phẩm</h2>
+                        <a href="#" class="view-all">Xem Tất Cả</a>
+                    </div>
+                    <div class="product-container">
+                        <div class="product-item"data-id="5" data-name="Quần Áo Bóng chuyền Màu xanh hồng Đẹp" data-price="189000" data-image="image/tk5.jpg">
+                            <div class="product-image">
+                                <img src="image/tk5.jpg" />
+                              
+                            </div>
+                            <div class="product-info" >
+                                <h3>Quần Áo Bóng chuyền Màu xanh hồng Đẹp</h3>
+                                <div class="product-price">
+                                    <span class="price">189,000₫/ Bộ</span>
+                                </div>
+                                <button class="view-details-btn"><a href="#">Chi tiết</a></button>
+                                <button class="add-to-cart-btn"  >Thêm giỏ hàng</button>
+                            </div>
+                        </div>
+                
+                        <div class="product-item" data-id="6" data-name="Giày chạy bộ thiết kế trắng" data-price="300000" data-image="image/tk6.webp">
+                            <div class="product-image">
+                                <img src="image/tk6.webp" />
+                               
+                            </div>
+                            <div class="product-info">
+                                <h3>Giày chạy bộ thiết kế trắng</h3>
+                                <div class="product-price">
+                                    <span class="price">300,000₫/ đôi</span>
+                                </div>
+                                <button class="view-details-btn"><a href="#">Chi tiết</a></button>
+                                <button class="add-to-cart-btn"  >Thêm giỏ hàng</button>
+                            </div>
+                        </div>
+                
+                        <div class="product-item" data-id="7" data-name="Giày chạy bộ thiết kế màu xanh than" data-price="500000" data-image="image/tk7.webp">
+                            <div class="product-image">
+                                <img src="image/tk7.webp" />
+                               
+                            </div>
+                            <div class="product-info">
+                                <h3>Giày chạy bộ thiết kế màu xanh than</h3>
+                                <div class="product-price">
+                                    <span class="price">500,000₫/ đôi</span>
+                                </div>
+                                <button class="view-details-btn"><a href="#">Chi tiết</a></button>
+                                <button class="add-to-cart-btn"  >Thêm giỏ hàng</button>
+                            </div>
+                        </div>
+                
+                        <div class="product-item" data-id="8" data-name="Giày bóng chuyền kamito màu đỏ " data-price="450000" data-image="image/tk6.jpg">
+                            <div class="product-image">
+                                <img src="image/tk6.jpg" />
+                                
+                            </div>
+                            <div class="product-info">
+                                <h3>Giày bóng chuyền kamito màu đỏ </h3>
+                                <div class="product-price">
+                                    <span class="price">450,000₫/ Bộ</span>
+                                </div>
+                                <button class="view-details-btn"><a href="#">chi tiết</a></button>
+                                <button class="add-to-cart-btn"  >giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-container">
+                        <div class="product-item" data-id="9" data-name="Vợt cầu lông yonex" data-price="2000000" data-image="image/tk7.jpg">
+                            <div class="product-image">
+                                <img src="image/tk7.jpg" />
+                              
+                            </div>
+                            <div class="product-info">
+                                <h3>Vợt cầu lông yonex</h3>
+                                <div class="product-price">
+                                    <span class="price">2,000,000₫/ bộ</span>
+                                </div>
+                                <button class="view-details-btn"><a href="#">chi tiết</a></button>
+                                <button class="add-to-cart-btn"  >giỏ hàng</button>
+                            </div>
+                        </div>
+                
+                        <div class="product-item"data-id="10" data-name="Vợt super light 8u full carbon" data-price="8000000" data-image="image/tk8.jpg" >
+                            <div class="product-image">
+                                <img src="image/tk8.jpg" />
+                               
+                            </div>
+                            <div class="product-info">
+                                <h3>Vợt super light 8u full carbon</h3>
+                                <div class="product-price">
+                                    <span class="price">8,000,000₫/ Chiếc</span>
+                                </div>
+                                <button class="view-details-btn"><a href="#">chi tiết</a></button>
+                                <button class="add-to-cart-btn"  >giỏ hàng</button>
+                            </div>
+                        </div>
+                
+                        <div class="product-item" data-id="11" data-name="Vợt picker ball Facolos Elite X" data-price="3500000" data-image="image/tk9.jpg">
+                            <div class="product-image">
+                                <img src="image/tk9.jpg" />
+                               
+                            </div>
+                            <div class="product-info">
+                                <h3>Vợt picker ball Facolos Elite X</h3>
+                                <div class="product-price">
+                                    <span class="price">3,500,000₫/ Chiếc</span>
+                                </div>
+                                <button class="view-details-btn"><a href="#">chi tiết</a></button>
+                                <button class="add-to-cart-btn"  >giỏ hàng</button>
+                            </div>
+                        </div>
+                
+                        <div class="product-item" data-id="12" data-name="Bóng picker ball chuẩn thi đấu Facolos" data-price="20000" data-image="image/tk10.jpg">
+                            <div class="product-image">
+                                <img src="image/tk10.jpg" />
+                                
+                            </div>
+                            <div class="product-info">
+                                <h3>Bóng picker ball chuẩn thi đấu Facolos </h3>
+                                <div class="product-price">
+                                    <span class="price">20,000₫/ quả</span>
+                                </div>
+                                <button class="view-details-btn"><a href="#">chi tiết</a></button>
+                                <button class="add-to-cart-btn"  >giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-container">
+                        <div class="product-item"data-id="13" data-name="Giày đá bóng nike tiempo Legend -Hồng đen" data-price="999000" data-image="image/tk1.webp">
+                            <div class="product-image">
+                                <img src="image/tk1.webp" />
+                              
+                            </div>
+                            <div class="product-info">
+                                <h3>Giày đá bóng nike tiempo Legend -Hồng đen</h3>
+                                <div class="product-price">
+                                    <span class="price">999,000₫/ đôi</span>
+                                </div>
+                                <button class="view-details-btn"><a href="#">chi tiết</a></button>
+                                <button class="add-to-cart-btn"  >giỏ hàng</button>
+                            </div>
+                        </div>
+                
+                        <div class="product-item" data-id="14" data-name="Giày bóng đá mizuno-cam vàng" data-price="546000" data-image="image/tk2.webp">
+                            <div class="product-image">
+                                <img src="image/tk2.webp" />
+                               
+                            </div>
+                            <div class="product-info">
+                                <h3>Giày bóng đá mizuno-cam vàng</h3>
+                                <div class="product-price">
+                                    <span class="price">546,000₫/ Chiếc</span>
+                                </div>
+                                <button class="view-details-btn"><a href="#">chi tiết</a></button>
+                                <button class="add-to-cart-btn"  >giỏ hàng</button>
+                            </div>
+                        </div>
+                
+                        <div class="product-item" data-id="15" data-name="Quả bóng đá zocket Kasper số 4 ZF" data-price="550000" data-image="image/tk3.webp">
+                            <div class="product-image">
+                                <img src="image/tk3.webp" />
+                               
+                            </div>
+                            <div class="product-info">
+                                <h3>Quả bóng đá zocket Kasper số 4 ZF</h3>
+                                <div class="product-price">
+                                    <span class="price">550,000₫/ Quả</span>
+                                </div>
+                                <button class="view-details-btn"><a href="#">chi tiết</a></button>
+                                <button class="add-to-cart-btn"  >giỏ hàng</button>
+                            </div>
+                        </div>
+                
+                        <div class="product-item"data-id="16" data-name="Giày picker ball KAMITO" data-price="899000" data-image="image/tk4.webp">
+                            <div class="product-image">
+                                <img src="image/tk4.webp" />
+                                
+                            </div>
+                            <div class="product-info">
+                                <h3>Giày picker ball KAMITO</h3>
+                                <div class="product-price">
+                                    <span class="price">899,000₫/ Đôi</span>
+                                </div>
+                                <button class="view-details-btn"><a href="#">chi tiết</a></button>
+                                <button class="add-to-cart-btn"  >giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-container">
+                        <div class="product-item"data-id="17" data-name="Quả bóng Việt Nam vô địch" data-price="120000" data-image="image/tk11.jpg">
+                            <div class="product-image">
+                                <img src="image/tk11.jpg" />
+                              
+                            </div>
+                            <div class="product-info">
+                                <h3>Quả bóng Việt Nam vô địch</h3>
+                                <div class="product-price">
+                                    <span class="price">120,000₫/ Quả</span>
+                                </div>
+                                <button class="view-details-btn"><a href="#">chi tiết</a></button>
+                                <button class="add-to-cart-btn"  >giỏ hàng</button>
+                            </div>
+                        </div>
+                
+                        <div class="product-item"data-id="18" data-name="Kính bơi phân cực người lớn" data-price="499000" data-image="image/tk5.webp">
+                            <div class="product-image">
+                                <img src="image/tk5.webp" />
+                               
+                            </div>
+                            <div class="product-info">
+                                <h3>Kính bơi phân cực người lớn</h3>
+                                <div class="product-price">
+                                    <span class="price">499,000₫/ Chiếc</span>
+                                </div>
+                                <button class="view-details-btn"><a href="#">chi tiết</a></button>
+                                <button class="add-to-cart-btn"  >giỏ hàng</button>
+                            </div>
+                        </div>
+                
+                        <div class="product-item"data-id="19" data-name="Quả bóng rổ thi đấu quốc tế" data-price="500000" data-image="image/tk9.webp">
+                            <div class="product-image">
+                                <img src="image/tk9.webp" />
+                               
+                            </div>
+                            <div class="product-info">
+                                <h3>Quả bóng rổ thi đấu quốc tế</h3>
+                                <div class="product-price">
+                                    <span class="price">500,000₫/ Quả</span>
+                                </div>
+                                <button class="view-details-btn"><a href="#">chi tiết</a></button>
+                                <button class="add-to-cart-btn"  >giỏ hàng</button>
+                            </div>
+                        </div>
+                
+                        <div class="product-item"data-id="20" data-name="Áo bóng rổ MLB" data-price="199000" data-image="image/tk8.webp">
+                            <div class="product-image">
+                                <img src="image/tk8.webp" />
+                                
+                            </div>
+                            <div class="product-info">
+                                <h3>Áo bóng rổ MLB</h3>
+                                <div class="product-price">
+                                    <span class="price">199,000₫/ Chiếc</span>
+                                </div>
+                                
+                                <button class="view-details-btn"><a href="#">chi tiết</a></button>
+                                <button class="add-to-cart-btn"  >giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="backtop"><i class="fa-solid fa-angle-up"></i></div>
+            <script
+              src="https://code.jquery.com/jquery-3.7.1.js"
+              integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+              crossorigin="anonymous"
+            ></script>
+            <script>
+              $(document).ready(function () {
+                $(window).scroll(function () {
+                  if ($(this).scrollTop() > 0) {
+                    $("#backtop").fadeIn();
+                  } else {
+                    $("#backtop").fadeOut();
+                  }
+                });
+                $("#backtop").click(function () {
+                  $("html, body").animate(
+                    {
+                      scrollTop: 0,
+                    },
+                    400
+                  );
+                });
+              });
+            </script>
+
+        </div>
+        
+        <div id="footer">
+            <div id="footer-a">
+                <div id="footer-left">
+                    <h1 class="h">Hỗ trợ khách hàng</h1>
+                    <ul class="u">
+                        <li class="l"><a href="#">Chính sách vận chuyển</a></li>
+                        <li class="l"><a href="#">Chính sách đổi trả</a></li>
+                        <li class="l"><a href="#">Chính sách khuyến mại</a></li>
+                        <li class="l"><a href="#">Hướng dẫn mua hàng</a></li>
+                        <li class="l"><a href="#">Câu hỏi thường gặp</a></li>
+                        <li class="l"><a href="#">Bảo mật thông tin</a></li>
+                    </ul>
+                </div>
+                <div id="footer-mid">
+                    <h1 class="h" id="Lienhe">Liên hệ</h1>
+                    <ul class="u">
+                        <li class="l">Địa chỉ: Thanh Long Yên Mỹ Hưng Yên</li>
+                        <li class="l">Điện thoại: 0964778132</li>
+                        <li class="l">Email: Truongdzqua171@gmail.com</li>
+                        <li class="l"><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li class="l"><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li class="l"><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+                    </ul>
+                </div>
+                <div id="footer-right">
+                    <h1 class="h">Về chúng tôi</h1>
+                    <div class="footer-logo">
+                        <img src="image/logo2.png" alt="Trường Sport Logo" class="logo">
+                    </div>
+                    <p>TRƯỜNG SPORT - Cửa hàng thể thao chuyên nghiệp hàng đầu Việt Nam. Chúng tôi cung cấp các sản phẩm thể thao chất lượng cao với giá cả hợp lý.</p>
+                </div>
+                <div id="footer-extra">
+                    <h1 class="h">Đăng ký nhận tin</h1>
+                    <p>Đăng ký để nhận thông tin về sản phẩm mới và khuyến mãi</p>
+                    <div class="footer-signup">
+                        <input type="email" placeholder="Email của bạn" class="footer-email">
+                        <button class="footer-btn">Đăng ký</button>
+                    </div>
+                    <div class="footer-payment">
+                        <h3>Thanh toán</h3>
+                        <div class="payment-icons">
+                            <i class="fab fa-cc-visa"></i>
+                            <i class="fab fa-cc-mastercard"></i>
+                            <i class="fab fa-cc-paypal"></i>
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 TRƯỜNG SPORT</p>
+            </div>
+        </div>
+         <script src="style.js"></script>
+   </body>
+</html>
